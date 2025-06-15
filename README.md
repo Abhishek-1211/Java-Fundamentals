@@ -1,6 +1,6 @@
 # Java-Fundamentals
 
-## creating threads
+## Creating threads
 
 ### Extending Thread class
 
