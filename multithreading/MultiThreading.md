@@ -1,3 +1,5 @@
+# MultiThreading
+
 ## Creating threads
 
 ### Extending Thread class
@@ -6,17 +8,13 @@
 * Instead if you call run method instead of start() then no new thread is not created
 * Output of  when call myThread.run() from main method
     * ---------------------------No new Thread is created-----------------------------------------------
-        * __Original thread main__
-          __myThread ...main__
-        * ![img_1.png](assets/img_1.png)
+        *![img_1.png](..%2Fassets%2Fimg_1.png)
 
 
 * Output for myThread.start()
     * -----------------------------New thread gets created---------------------------------------------
-        * __Original thread main__
-          __myThread ...Thread-1__
+      * ![img.png](..%2Fassets%2Fimg.png)
 
-          ![img.png](assets/img.png)
 
 ### Implementing Runnable interface (MyRunnableThread.java)
 

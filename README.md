@@ -1,5 +1,5 @@
 # Java-Fundamentals
 
-## topics covered
+## Topics covered
 
 * MultiThreading - refer Multithreading.md inside multithreading folder
