@@ -1,5 +1,13 @@
 # MultiThreading
 
+* __What is a thread ?__
+  * Thread is the fundamental unit of CPU execution.
+    * At any moment of time, is CPU executing your program as a whole ? No, its exceuting only a portion/part of the program.
+    * So, the sections/parts of program capable of being __executed independently__ is called _THREAD_
+
+* __Why multithreading ?__
+  * To maximise CPU utilisation
+
 ## Creating threads
 
 ### Extending Thread class
@@ -19,6 +27,17 @@
 ### Implementing Runnable interface (MyRunnableThread.java)
 
 1. Create a class that implements _Runnable_
-2. Override the _run()_ method - This conatins code that will run in the thread
+2. Override the _run()_ method - This contains code that will run in the thread
 3. create a __Thread__ object, passing your runnable instance to the _Thread constructor_
 4. Start the Thread using _thread.start()_
+
+## Lifecycle of a Thread
+
+## Methods to prevent thread execution
+* yield()
+* sleep()
+* join()
+
+## Synchronisation
+* synchronised method
+* synchronised block
