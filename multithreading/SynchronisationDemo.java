@@ -45,13 +45,13 @@ class Caller implements Runnable {
 
 class CallMe {
 
-       void call(String msg){
+       synchronized void call(String msg){
         print("["+msg);
-//        try {
-//            Thread.sleep(500);
-//        } catch (InterruptedException e) {
-//            throw new RuntimeException(e);
-//        }
+        try {
+            Thread.sleep(400);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         println("]");
     }
 

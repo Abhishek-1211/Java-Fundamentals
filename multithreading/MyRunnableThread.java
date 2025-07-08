@@ -15,7 +15,7 @@ public class MyRunnableThread implements  Runnable {
         try {
             for(int i =5;i<10;i++){
                 println("Main thread :i*i="+i*i);
-                Thread.sleep(1000);
+                Thread.sleep(500);
             }
         } catch (InterruptedException e) {
             throw new RuntimeException(e);

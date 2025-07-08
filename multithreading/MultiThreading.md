@@ -41,3 +41,17 @@
 ## Synchronisation
 * synchronised method
 * synchronised block
+
+## interthread communication
+
+All the below run in synchronisation context
+
+* __wait()__
+  * runs within the synchronisation context
+  * invoking thread releases the lock and goes into sleeping state unless some other thread 
+    wakes it up by invoking notify() or  notifyAll()
+  
+* __notify()__
+    When notify() is invoked by a thread it notifies one of the thread waiting on the object.
+    The choice of which thread to notify depends on JVM
+* __notifyAll()__

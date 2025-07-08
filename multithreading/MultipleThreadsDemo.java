@@ -29,7 +29,7 @@ public class MultipleThreadsDemo implements Runnable {
         try {
            // println("new Thread created..."+);
             for(int i =0;i<5;i++){
-                Thread.sleep(500);
+                Thread.sleep(400);
                 println("Thread "+Thread.currentThread().getName()+ " "+"i="+i);
             }
         } catch (InterruptedException e) {

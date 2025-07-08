@@ -7,11 +7,12 @@ public class MyThread extends Thread{
     @Override
     public void run() {
         super.run();
+
         println("myThread ..."+Thread.currentThread().getName());
         try {
             for(int i =0;i<5;i++){
                 println("My Thread:i*i="+i*i);
-                Thread.sleep(1000);
+                Thread.sleep(500);
 
             }
         } catch (InterruptedException e) {
