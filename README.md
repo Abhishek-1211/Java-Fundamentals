@@ -29,3 +29,7 @@ __Steps to install any java version__
 
 2. __Jenv Guide__
  https://github.com/jenv/jenv
+
+## References
+1. Enabling preview features -https://www.jetbrains.com/guide/java/tips/turn-on-preview-features/#
+2. 

@@ -58,7 +58,7 @@ class Account {
         //println("Current balance = "+this.balance);
         return this.balance;
     }
-    public  void withdraw(int amount) throws InsufficientBalanceException {
+    public synchronized void withdraw(int amount) throws InsufficientBalanceException {
         println(Thread.currentThread().getName() +" is trying to withdraw Rs. "+amount);
         if(this.balance-amount<0){
             throw new InsufficientBalanceException("Insufficient balance");
